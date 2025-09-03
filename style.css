@@ -1,0 +1,212 @@
+*{box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+scroll-behavior: smooth;}
+
+
+/* body styling */
+body{display: flex;
+flex-direction: column;
+min-height: 100vh;}
+
+/* header */
+header{text-align: center;
+background: #35424a;
+padding: 30px;
+top: 0;}
+
+h1{color: white;}
+
+h1,nav{background:#35424a;}
+
+nav a{text-decoration: none;
+margin: 15px;
+color: white;
+background: #35424a;
+transition: 0.5s ease;}
+
+a:hover{color: orange;
+font-weight: bold;}
+
+/* main */
+main{flex: 1 0 auto;}
+
+h2{text-align: center;}
+hr{margin-left: 40%;
+margin-right: 40%;}
+
+.container{
+padding: 20px;
+background: lightgrey;    
+}
+
+.image img{width: 200px;
+height: 200px;
+border-radius: 100px;
+display: block;
+margin: auto;
+padding: 10px;}
+
+.about{margin: 5px;
+padding: 5px;}
+
+
+  .slider-container {
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            cursor: grab;
+            user-select: none;
+        }
+        .slider-track.dragging {
+            cursor: grabbing;
+            transition: none;
+        }
+        .product-card {
+            flex-shrink: 0;
+            width: 100%;
+            padding: 1rem;
+        }
+        .product-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: orange;
+        }
+        .product-info{
+            text-align: center;
+            font-weight: bold;
+        }
+        /* Mobile responsive adjustments */
+        @media (min-width: 300px) {
+            .product-card {
+                width: calc(100% / 2);
+            }
+        }
+        @media (min-width: 1024px) {
+            .product-card {
+                width: calc(100% / 3);
+            }
+        }
+figcaption{text-align: center;
+font-weight: bold;}
+
+
+.services{padding: 20px;}
+.service{
+    text-align: center;
+    margin: 10px;
+    background: whitesmoke;
+    border: 1px solid white;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+.service:hover{
+    transform: translateY(-5px);
+}
+.service h3{padding: 10px;}
+.service p{
+    margin: 10px;
+}
+
+.contact-info{
+margin: 10px;}
+.contact-info .info{
+    margin: 5px;
+    padding: 5px;
+}
+
+#contact{margin: 5px;
+padding: 20px;}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #5d9cec;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3875d6;
+}
+
+/* footer */
+footer{text-align: center;
+background: #35424a;
+color: white;
+padding: 20px;}
+
+
+/* media queries */
+@media(min-width:700px){
+header{display: flex;
+justify-content: space-between;
+align-content: center;
+align-items: center;
+padding: 30px;}
+    .container{display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;}
+    .services{display: flex;
+    flex-direction: row;}
+    .service{
+    text-align: center;
+    margin: 10px;
+    background: whitesmoke;
+    border: 1px solid white;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+.service:hover{
+    transform: translateY(-12px);}
+    .contact-info{display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+margin: 10px;}
+.contact-info .info{
+    margin: 5px;
+    padding: 5px;
+}
+.skills{display: flex;
+justify-content: space-between;}
+}
